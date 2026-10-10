@@ -1,0 +1,121 @@
+TYPING RACE 3D
+==============
+Lancer le jeu : double-clique sur LANCER.bat  (ou :  python main.py)
+Prérequis     : Python 3 avec Tkinter (inclus sous Windows) + pygame pour la musique.
+
+AU DÉMARRAGE : deux modes
+  MODE THÉORIQUE  - apprendre à taper sans regarder (clavier virtuel masqué + mains guides)
+  MODE PRATIQUE   - la course 3D
+  Touche TAB : passer d'un mode à l'autre à tout moment.  I : pourquoi deux modes ?
+
+Mode théorique : choisis ton clavier (AZERTY, QWERTY, QWERTZ, Dvorak, Colemak) ou
+"Par défaut" pour détecter celui de ton système. 6 niveaux : rangée de base, voyelles,
+consonnes, mots français, mots anglais, défi final (85 % de précision pour réussir).
+  F1 = guide des doigts | ÉCHAP = retour | TAB = mode pratique
+
+Mode pratique : 1/2/3 difficulté | D durée | F/E langue | T mode | Q qualité 3D
+  G garage | S statistiques | M son | ENTRÉE jouer | ÉCHAP accueil
+  (les touches 1/2/3 fonctionnent aussi sur clavier AZERTY : & é " sans Maj)
+  B (dans le menu) : DÉFIS BOSS, des duels toi contre un boss (2 places). Voir plus bas.
+  F3 : afficher le nombre d'images par seconde (n'importe où dans le jeu)
+  F11 : plein écran (F11 de nouveau pour revenir). La fenêtre peut aussi être agrandie
+        avec le bouton ▢ de Windows ou en tirant les bords : le jeu s'adapte à la taille.
+
+Musiques : dossier "sons" (1.mp3, 2.mp3, 3.wav ...), voir sons/LISEZ-MOI.txt
+
+FLUIDITÉ : si ton PC est lent, le jeu baisse tout seul la qualité 3D pendant la course.
+Tu peux aussi la régler à la main avec Q dans le menu (Légère = le plus rapide).
+En cas de bug, le jeu continue de tourner et note l'erreur dans le fichier erreurs.log.
+Ta progression est dans typing_race_donnees.json (un fichier abîmé est mis de côté en .corrompu.json).
+Plus la fenêtre est grande, plus l'affichage demande de puissance : si ça ralentit, choisis la qualité Légère (Q).
+
+CRÉER UN .EXE (Windows) :
+  Double-clique sur CREER_EXE.bat (installe pyinstaller si besoin). Le résultat est dist\TypingRace3D.exe.
+  L'icône du jeu (voiture + clavier + mains) est dans icone_typing_race.ico : elle est mise sur le .exe
+  et dans la barre de titre de la fenêtre.
+  Tu peux copier ce .exe seul où tu veux : à côté de lui, le jeu crée
+    - typing_race_donnees.json (ta progression)
+    - le dossier sons (dépose-y tes musiques .mp3 / .ogg / .wav)
+    - erreurs.log (seulement en cas de bug)
+  Si le dossier du .exe est protégé en écriture (ex. Program Files), ces fichiers sont rangés dans
+  %APPDATA%\TypingRace3D à la place.
+  Pour changer d'ordinateur en gardant ta progression : copie typing_race_donnees.json à côté du .exe.
+
+DÉFIS BOSS (touche B dans le menu) :
+  Un duel : toi contre un seul boss, côte à côte, il n'y a que 2 places. Chaque boss se débloque à un niveau
+  (ton niveau monte avec l'XP) et reste ensuite disponible quand tu veux :
+    Niveau  3 : Rapido       (~42 mots/min)  impulsif : part vite, fait beaucoup de fautes
+    Niveau  5 : Mécano Max   (~58 mots/min)  régulier : presque jamais de faute
+    Niveau  7 : La Comète    (~72 mots/min)  rageur : des rafales, s'accroche si tu passes devant
+    Niveau 10 : Le Champion  (~88 mots/min)  impitoyable : quasi sans faute, accélère à la fin
+  Victoire : WPM + 50 XP, et un bonus de 100 / 150 / 200 / 300 XP la PREMIÈRE fois que tu bats le boss.
+  Défaite : WPM + 10 XP. Après un duel : ENTRÉE = revanche, ÉCHAP = liste des boss.
+  La durée du duel se règle avec D (dans la liste des boss). Les boss vaincus sont sauvegardés.
+
+==================================================================
+NOUVEAUTÉS DE LA VERSION 6
+==================================================================
+
+NOUVEAU DESIGN
+  Fond en dégradé indigo avec halos de couleur, cartes et boutons aux coins arrondis,
+  palette cyan / violet / ambre (les couleurs sont dans config.py : FOND, ACCENT, ...).
+
+DURÉE DE COURSE LIBRE
+  - Liste « Durée » : 15 s, 30 s, 1 min, 2 min, 5 min, 15 min, 1 h, 24 h ou « Saisir une durée… ».
+  - Touche D : passe au choix rapide suivant. Touche U : ouvre la saisie libre.
+  - Tu peux écrire : 90 | 5 min | 2h | 1h30 | 24h | 3j | 1:30:00 (de 5 secondes à 30 jours),
+    au clavier ou avec le pavé de touches affiché à l'écran.
+  - Le choix est mémorisé. Le compte à rebours passe en h:mm:ss au-delà d'une heure.
+  - Limites : DUREE_MIN et DUREE_MAX dans config.py.
+
+SOURIS
+  - Tout est cliquable : boutons, cartes, listes (boss, musique, claviers, niveaux...).
+  - Le curseur devient une main (« hand2 ») dès qu'on survole quelque chose de cliquable.
+  - Les listes déroulantes (durée, langue, mode, qualité 3D, nombre de voitures...) s'ouvrent
+    seulement au CLIC sur la liste (un 2e clic, un clic ailleurs ou ÉCHAP la referme).
+    Pour revenir à l'ouverture au survol : OUVRIR_AU_SURVOL = True dans config.py.
+  - Le clavier fonctionne toujours comme avant (les raccourcis sont écrits sur les boutons).
+
+COMPÉTITIONS  (menu : touche C ou bouton « Compét. »)
+  Tu choisis le format, le NOMBRE DE VOITURES, la durée de chaque course et le niveau.
+  - CHAMPIONNAT : 3, 5, 8 ou 10 manches avec tous les pilotes (4 à 20 voitures). Le 1er marque
+    autant de points que de voitures, le dernier 1 point. Le total le plus haut est champion.
+  - COUPE DU MONDE : 4, 8, 16 ou 32 voitures. À chaque tour, la moitié basse du classement est
+    éliminée (huitièmes, quarts, demi-finales, finale). Si tu es éliminé, c'est fini.
+  - ÉLIMINATION : une seule course (3 à 20 voitures). Le dernier est éliminé à intervalle régulier
+    (durée / nombre de voitures, au moins 3 s) jusqu'au dernier survivant. Si c'est toi : éliminé !
+  Les XP bonus et les derniers résultats sont enregistrés. Avec plus de 4 voitures, elles partent
+  en grille (rangées successives) et le panneau montre le haut du classement + ta position.
+
+ARRIVÉE
+  Quand ta voiture franchit la ligne : deux drapeaux à damier qui ondulent, des bandes à damier
+  en haut et en bas de l'écran et le bandeau « ARRIVÉE ! » s'affichent avant le résultat.
+  En entraînement, un petit drapeau salue chaque tour. Fin de temps, élimination, survivant :
+  bandes et bandeau adaptés.
+
+CORRECTIONS
+  - Cache du décor (scene3d.py) : une KeyError se produisait sur les très longues courses.
+  - Une disposition de clavier inconnue dans la sauvegarde ne fait plus planter la théorie.
+
+==================================================================
+NOUVEAUTÉS DE LA VERSION 7
+==================================================================
+  - LISTES DÉROULANTES : elles ne s'ouvrent plus quand le curseur passe dessus, il faut cliquer.
+  - COUPE DU MONDE : après chaque tour, un schéma (16es -> 8es -> quarts -> demies -> finale -> trophée)
+    montre ta position. Chemin parcouru en vert, pastille « TOI » sur ton tour actuel
+    (bleu = prochain tour, rouge = éliminé, or = champion du monde).
+  - CHAMPIONNAT : une « route vers le trophée » montre les manches jouées, la suivante, ta place et tes points.
+  - PODIUM : 1re place = trophée d'or, 2e = médaille d'argent, 3e = médaille de bronze, avec ta position et
+    « Tu es le meilleur en saisie de frappe ! » (1er) ou « Tu es parmi les meilleurs... » (2e, 3e).
+    Affiché à la fin des compétitions et à la fin d'une course normale.
+  - Nouveau fichier : schema.py (dessin du trophée, des médailles et des schémas).
+
+==================================================================
+CONTACT / SUPPORT
+==================================================================
+Jeu créé par LONTIO KESSEL. Un problème ? Une question ? Écris-moi :
+  WhatsApp : +237 650 196 251   (https://wa.me/237650196251)
+  E-mail   : lontiokessel@gmail.com
+  GitHub   : https://github.com/LONTIo-RICHY
+Dans le jeu : touche C sur l'écran d'accueil (ou clic sur la signature en bas).
+Joins le fichier erreurs.log s'il existe : il m'aide à comprendre le problème.

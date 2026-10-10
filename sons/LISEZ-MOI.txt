@@ -1,0 +1,16 @@
+DOSSIER "sons" : tes musiques pour la course
+=============================================
+
+1. Mets tes fichiers audio dans CE dossier (formats : .mp3 .ogg .wav .flac).
+2. Renomme-les avec des numéros :   1.mp3   2.mp3   3.mp3   4.wav ...
+3. Lance le jeu, appuie sur ENTRÉE : la liste de tes sons s'affiche
+   ("Son 1", "Son 2", ...) et tu choisis avant la course.
+
+Dans la liste :
+  - chaque son se joue EN BOUCLE ;
+  - "Tous mes sons à la suite, en boucle" joue 1, 2, 3 ... puis recommence
+    (cette entrée apparaît dès que tu as 2 sons ou plus) ;
+  - "Aucune musique" pour jouer en silence.
+
+Touches : haut/bas = écouter, gauche/droite = volume, ENTRÉE = valider.
+(Il faut pygame :  pip install pygame)

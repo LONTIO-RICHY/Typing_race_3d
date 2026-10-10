@@ -1,0 +1,2 @@
+Mets tes musiques dans CE dossier (.mp3 .ogg .wav .flac) et numerote-les :
+1.mp3  2.mp3  3.mp3 ...  Relance le jeu, puis choisis la musique dans le menu.

@@ -1,0 +1,360 @@
+{
+ "xp": 442,
+ "meilleur": 39,
+ "top": [
+  {
+   "wpm": 39,
+   "precision": 96,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 39,
+   "precision": 96,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 38,
+   "precision": 86,
+   "place": 4,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 36,
+   "precision": 93,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 35,
+   "precision": 87,
+   "place": 2,
+   "duree": 60,
+   "diff": "1",
+   "langue": "fr",
+   "mode": "course",
+   "date": "07/10"
+  },
+  {
+   "wpm": 34,
+   "precision": 92,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 34,
+   "precision": 89,
+   "place": 4,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 32,
+   "precision": 84,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 31,
+   "precision": 79,
+   "place": 3,
+   "duree": 60,
+   "diff": "1",
+   "langue": "fr",
+   "mode": "course",
+   "date": "07/10"
+  },
+  {
+   "wpm": 30,
+   "precision": 77,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  }
+ ],
+ "historique": [
+  {
+   "wpm": 36,
+   "precision": 93,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 39,
+   "precision": 96,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 32,
+   "precision": 84,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 34,
+   "precision": 92,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 39,
+   "precision": 96,
+   "place": 7,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 30,
+   "precision": 77,
+   "place": 8,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 34,
+   "precision": 89,
+   "place": 4,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 38,
+   "precision": 86,
+   "place": 4,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 30,
+   "precision": 82,
+   "place": 6,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "comp": "champ",
+   "date": "05/10"
+  },
+  {
+   "wpm": 29,
+   "precision": 80,
+   "place": 4,
+   "duree": 30,
+   "diff": "2",
+   "langue": "fr",
+   "mode": "course",
+   "date": "05/10"
+  },
+  {
+   "wpm": 31,
+   "precision": 79,
+   "place": 3,
+   "duree": 60,
+   "diff": "1",
+   "langue": "fr",
+   "mode": "course",
+   "date": "07/10"
+  },
+  {
+   "wpm": 35,
+   "precision": 87,
+   "place": 2,
+   "duree": 60,
+   "diff": "1",
+   "langue": "fr",
+   "mode": "course",
+   "date": "07/10"
+  }
+ ],
+ "lettres": {
+  "t": [
+   3,
+   68
+  ],
+  "r": [
+   20,
+   139
+  ],
+  "a": [
+   6,
+   75
+  ],
+  "v": [
+   2,
+   39
+  ],
+  "i": [
+   15,
+   109
+  ],
+  "l": [
+   11,
+   47
+  ],
+  "c": [
+   6,
+   34
+  ],
+  "e": [
+   45,
+   236
+  ],
+  "m": [
+   7,
+   43
+  ],
+  "u": [
+   1,
+   53
+  ],
+  "s": [
+   3,
+   37
+  ],
+  "q": [
+   7,
+   13
+  ],
+  "o": [
+   9,
+   75
+  ],
+  "g": [
+   3,
+   42
+  ],
+  "n": [
+   19,
+   76
+  ],
+  "d": [
+   0,
+   12
+  ],
+  "b": [
+   0,
+   12
+  ],
+  "p": [
+   7,
+   34
+  ],
+  "j": [
+   3,
+   17
+  ],
+  "h": [
+   1,
+   8
+  ],
+  "f": [
+   0,
+   5
+  ],
+  "y": [
+   0,
+   1
+  ]
+ },
+ "modele": 0,
+ "couleur": 0,
+ "piste": 0,
+ "muet": false,
+ "musique": "1.wav",
+ "volume": 1.0,
+ "qualite": 1,
+ "clavier": "qwerty",
+ "theorie": {
+  "qwerty": {
+   "debloque": 1,
+   "scores": {}
+  }
+ },
+ "guide_doigts": true,
+ "boss_vaincus": [],
+ "duree": 60,
+ "trophees": [
+  {
+   "format": "champ",
+   "n": 8,
+   "place": 7,
+   "date": "05/10"
+  }
+ ]
+}
